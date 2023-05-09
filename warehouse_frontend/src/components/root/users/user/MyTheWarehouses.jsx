@@ -170,10 +170,12 @@ const MyTheWarehouses = () => {
             </div>
           </div>
 
+             
+
           {state.searchedWarehouses.map((warehouse) => (
             <div key={warehouse.id} className={styles.rapper}>
               <Link
-                to="#"
+                to={`/theWarehouse/${warehouse.id}`}
                 onClick={() => handleSort(warehouse.id)}
                 className={styles.card}
                 id={warehouse.id}

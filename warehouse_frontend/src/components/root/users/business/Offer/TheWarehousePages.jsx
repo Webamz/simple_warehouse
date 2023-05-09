@@ -14,6 +14,18 @@ import RemoveWarehouseService from "../../../../../api/warehouse/RemoveWarehouse
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
 
+
+import jsPDF from "jspdf";
+
+
+
+
+
+
+
+
+
+
 const TheWarehousePages = () => {
   const isUserLoggedIn = AuthenticationService.isUserLoggedIn();
   const isBusinessLoggedIn = AuthenticationService.isBusinessLoggedIn();
@@ -61,6 +73,20 @@ const TheWarehousePages = () => {
         },
       ],
     });
+  };
+
+
+  const handleDownload = () => {
+    // Create a new jsPDF instance
+    const pdf = new jsPDF();
+  
+    // Add the warehouse name, about, and contact information to the PDF
+    pdf.text(20, 20, `Warehouse Name: ${warehouse.name}`);
+    pdf.text(20, 30, `About: ${warehouse.description}`);
+    pdf.text(20, 40, `Contact Information: ${warehouse.contactInfo}`);
+  
+    // Download the PDF
+    pdf.save(`${warehouse.name}.pdf`);
   };
 
   const handleEdit = (warehouse) => (event) => {
@@ -210,6 +236,11 @@ const TheWarehousePages = () => {
                   >
                     contact
                   </span>
+                  <span 
+                  >
+                    <button onClick={handleDownload}>Download PDF</button>
+                  </span>
+
                 </article>
               )}
 

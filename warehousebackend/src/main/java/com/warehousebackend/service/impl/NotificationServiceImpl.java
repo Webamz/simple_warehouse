@@ -23,7 +23,7 @@ public class NotificationServiceImpl implements NotificationService {
         SimpleMailMessage mail = new SimpleMailMessage();
         String mailBody = "http://localhost:3000/password/" + userEntity.getId();
         mail.setTo(userEntity.getEmail());
-        mail.setFrom("findyourhobbie@gmail.com");
+        mail.setFrom("tresorxavier16@gmail.com");
         mail.setSubject("Change your password");
         mail.setText("Click the link to reset your password: " + mailBody);
 

@@ -25,14 +25,14 @@ class CategoryServiceTest {
         mockCategoryRepository = mock(CategoryRepository.class);
         categoryServiceTest = new CategoryServiceImpl(mockCategoryRepository);
         category = new Category();
-        category.setName(CategoryNameEnum.ACTIVE);
+        category.setName(CategoryNameEnum.OFFICE);
     }
 
     @Test
     void findByName_should_Work() {
-        Mockito.when(mockCategoryRepository.findByName(CategoryNameEnum.ACTIVE)).
+        Mockito.when(mockCategoryRepository.findByName(CategoryNameEnum.OFFICE)).
                 thenReturn(Optional.of(category));
-        Category byName = categoryServiceTest.findByName(CategoryNameEnum.ACTIVE);
+        Category byName = categoryServiceTest.findByName(CategoryNameEnum.OFFICE);
 
         assertEquals(category.getName(), byName.getName());
     }

@@ -61,7 +61,7 @@ public class UserServiceImpl implements UserService {
             user.setEmail("n13@gmail.com");
             user.setPassword(this.passwordEncoder.encode("topsecret"));
             user.setRoles(List.of(userRole));
-            user.setFullName("Nikoleta Doykova");
+            user.setFullName("Christine Ingabire");
             user.setGender(GenderEnum.FEMALE);
 
             appClientRepository.save(user);

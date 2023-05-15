@@ -11,7 +11,7 @@ that are good for their customers.
 
 * [Click here to view the application.](https://warehousems.netlify.app)
 * [Click here to view the User Documentation](https://github.com/Webamz/simple_warehouse/blob/main/userdocumentation.pdf)
-
+* [Click here to view the database schema](https://github.com/Webamz/simple_warehouse/blob/main/warehousems_ERD.pdf)
 
 ### Applications
 <hr>

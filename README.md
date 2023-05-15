@@ -10,7 +10,7 @@ that are good for their customers.
 <hr>
 
 * [Click here to view the application.](https://warehousems.netlify.app)
-* [Download User Documentation](https://github.com/Webamz/simple_warehouse/blob/main/userdocumentation.pdf)
+* [Click here to view the User Documentation](https://github.com/Webamz/simple_warehouse/blob/main/userdocumentation.pdf)
 
 
 ### Applications

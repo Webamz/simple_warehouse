@@ -44,7 +44,7 @@ Java 11+
 
 npm
 
-JWT 
+jwt
 
 <b>Setup</b>
 <hr></hr>

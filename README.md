@@ -44,7 +44,6 @@ Java 11+
 
 npm
 
-jwt
 
 <b>Setup</b>
 <hr></hr>
@@ -78,5 +77,12 @@ Go to the frontend subfolder
 <pre>cd warehousebackend</pre>
 
 Run project
+
+
+
+AUTHOR
+<hr>
+
+[Christian Iradukunda](https://github.com/Webamz)
 
 

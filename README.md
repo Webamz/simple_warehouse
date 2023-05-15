@@ -41,7 +41,9 @@ warehouse_front uses semantic UI React as CSS-styled framework.
 <b>Prerequisites</b>
 <hr>
 Java 11+
+
 npm
+
 JWT 
 
 <b>Setup</b>
@@ -69,6 +71,7 @@ Start the application on the localhost;
 
 
 <b>Backend -</b>
+
 Install JDK 17
 
 Go to the frontend subfolder

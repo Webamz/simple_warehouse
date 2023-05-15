@@ -43,6 +43,7 @@ warehouse_front uses semantic UI React as CSS-styled framework.
 Java 11+
 
 npm
+
 JWT 
 
 <b>Setup</b>

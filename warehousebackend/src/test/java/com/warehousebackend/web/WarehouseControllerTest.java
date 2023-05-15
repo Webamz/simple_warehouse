@@ -78,7 +78,7 @@ public class WarehouseControllerTest extends AbstractTest {
 
         warehouseInfoUpdateDto = new WarehouseInfoUpdateDto();
         warehouseInfoUpdateDto.setCreator("user");
-        warehouseInfoUpdateDto.setCategory(CategoryNameEnum.OFFICE);
+        warehouseInfoUpdateDto.setCategory(CategoryNameEnum.ACTIVE);
         warehouseInfoUpdateDto.setLocation(LocationEnum.KIGALI);
         warehouseInfoUpdateDto.setDescription("What is Equestrian Tourism?\n" +
                 "The Equestrian Tourism is an activity that combines the passion for horse riding with the interest to visit different regions, provinces and countries, which allows to discover different cultures, other people and typical gastronomy.\n" +
@@ -110,7 +110,7 @@ public class WarehouseControllerTest extends AbstractTest {
         warehouseInfoUpdateDto.setContactInfo("How fast your skills improve depend on every individual and on your purpose.");
 
         ModelMapper modelMapper = new ModelMapper();
-        Category category = new Category(CategoryNameEnum.OFFICE);
+        Category category = new Category(CategoryNameEnum.ACTIVE);
         Location location = new Location(LocationEnum.KIGALI);
         warehouse = modelMapper.map(warehouseInfoDto, Warehouse.class);
         warehouse.setCategory(category);

@@ -30,13 +30,13 @@ public class TestControllerTest extends AbstractTest {
     @Before
     public void setUp() {
         results = new com.warehousebackend.model.entities.Test();
-        results.setCategoryOne(CategoryNameEnum.OFFICE);
-        results.setCategoryTwo(CategoryNameEnum.OFFICE);
-        results.setCategoryThree(CategoryNameEnum.OFFICE);
-        results.setCategoryFour(CategoryNameEnum.OFFICE);
-        results.setCategoryFive(CategoryNameEnum.OFFICE);
-        results.setCategorySix(CategoryNameEnum.OFFICE);
-        results.setCategorySeven(CategoryNameEnum.OFFICE);
+        results.setCategoryOne(CategoryNameEnum.ACTIVE);
+        results.setCategoryTwo(CategoryNameEnum.ACTIVE);
+        results.setCategoryThree(CategoryNameEnum.ACTIVE);
+        results.setCategoryFour(CategoryNameEnum.ACTIVE);
+        results.setCategoryFive(CategoryNameEnum.ACTIVE);
+        results.setCategorySix(CategoryNameEnum.ACTIVE);
+        results.setCategorySeven(CategoryNameEnum.ACTIVE);
         results.setUsername("username");
         results.setId(1L);
         results.setLocation(LocationEnum.KIGALI);

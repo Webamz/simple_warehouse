@@ -55,7 +55,7 @@ class WarehouseServiceImplTest {
         warehouse = new Warehouse();
         warehouse.setId(1L);
         WarehouseInfoDto warehouseServiceModel = new WarehouseInfoDto();
-        warehouseServiceModel.setCategory(CategoryNameEnum.OFFICE);
+        warehouseServiceModel.setCategory(CategoryNameEnum.ACTIVE);
         warehouseServiceModel.setLocation(LocationEnum.KIGALI);
         warehouse.setIntro("intro");
         warehouse.setSlogan("slogan");
@@ -75,7 +75,7 @@ class WarehouseServiceImplTest {
         warehouse.setCreator("businessOwner");
         warehouse.setPrice(new BigDecimal("100"));
         Category category = new Category();
-        category.setName(CategoryNameEnum.OFFICE);
+        category.setName(CategoryNameEnum.ACTIVE);
         warehouse.setCategory(category);
         warehouse.setName("warehouseName");
         warehouse.setContactInfo("contact info");
@@ -85,9 +85,9 @@ class WarehouseServiceImplTest {
                 .thenAnswer(i -> i.getArguments()[0]);
         when(mockWarehouseRepository.save(Mockito.any(Warehouse.class)))
                 .thenAnswer(i -> i.getArguments()[0]);
-        when(categoryServiceTest.findByName(CategoryNameEnum.OFFICE)).
+        when(categoryServiceTest.findByName(CategoryNameEnum.ACTIVE)).
                 thenReturn(new Category() {{
-                    setName(CategoryNameEnum.OFFICE);
+                    setName(CategoryNameEnum.ACTIVE);
                 }});
 
         when(locationServiceTest.getLocationByName(LocationEnum.KIGALI)).
